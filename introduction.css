@@ -1,0 +1,89 @@
+body {
+  color: primary-color;
+  font: 100% Helvetica, sans-serif;
+}
+
+/*
+sass ==> syntactically Awesome style sheets
+sass is extension to css and css pre-Processor
+sass is easy to manage
+sass is increase coding speed
+sass is cross browser compatible
+sass is useful in big project not for small project
+Browser is not able to understand sass.
+First sass will convert into css using compiler then browser able to understand .
+
+sass => sass compiler => css
+
+Feature od sass
+
+1. variable
+2. Nesting
+3. Partials & import
+4. Mixins
+5. Extends
+6. Operators
+7. Functions
+8. conditional Directives
+9. Loop
+
+Difference between scss sass and css
+
+Scss syntax
+
+nav{
+    ul{
+        margin:0;
+        padding:0;
+        list-style:none;
+    }
+    li{
+        display:inline-block;
+    }
+    a{
+        display:block;
+        padding:6 px 12px;
+        text-decoration:none
+    }
+}
+
+
+Sass syntax
+
+nav
+ ul
+  margin:0
+  padding:0
+  list-style:none
+ li
+  display:inline-block
+ a
+  display:block
+  padding:6px 12px
+  text-decoration:none
+
+css
+
+nav ul{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+
+nav li{
+    display:inline-block
+}
+
+nav a{
+    display:block;
+    padding: 6px 12px ;
+    text-decoration:none
+}
+
+sass two type of extension .scss and  .sass
+
+
+
+*/
+
+/*# sourceMappingURL=introduction.css.map */

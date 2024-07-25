@@ -1,0 +1,25 @@
+/*
+    Normally HTML is written in clear nested visual hierarchy but we can't write similar like nested and 
+    hierarchy in css.
+
+    But with help sass we can write nested and hierarchy
+
+    syntax of scss
+
+    nav{
+        ul{
+            margin:0;
+            padding:0;
+            list-style:none;
+        }
+        li{
+            display:inline
+        }
+        a{
+            display:block;
+            padding: 6px 12 px;
+
+        }
+    }
+
+*/

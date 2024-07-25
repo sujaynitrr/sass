@@ -1,0 +1,60 @@
+// Define some variables
+$base-font-size: 16px;
+$base-color: #3498db;
+$secondary-color: #2ecc71;
+$padding: 10px;
+$margin: 20px;
+
+
+// Arithmetic Operators
+$double-padding: $padding * 2;
+$half-margin: $margin / 2;
+$total-spacing: $padding + $margin;
+$spacing-difference: $margin - $padding;
+$remainder: $margin % $padding;
+
+
+
+
+/*
+    Equality Operator
+    It is used in conditional statement
+    first one == it is equal
+    other one != it is not equal
+*/
+@mixin font-fl($font){
+    &:after{
+        @if(type-of($font)==string){
+             content :'My font is :#{$font}';
+
+        }@else{
+            content:'Sorry, the argument #{font} is a#{type-of($font)}'
+        }
+    }
+   
+}
+h2{
+    @include font-fl(sans-serif)
+}
+
+
+// Comparison Operators 
+/*
+    It is similar like equality operator  but difference is it is use for comparison.
+*/
+
+$padding:50px;
+
+h2{
+    @if($padding<= 20 px){
+        padding: $padding;
+    }@else{
+        padding: $padding/2;
+    }
+}
+
+/*
+    Logical operator
+    and, or
+*/
+

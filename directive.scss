@@ -1,0 +1,136 @@
+/*
+    Directive in sass
+    There are different type of directive in sass
+    like @import
+    In sass start directive with @keyword
+
+    @import  ==>   it is used to import the sass and scss files  
+
+    @media ==> it is used to set style rule to different media type
+
+    @extend ==> it is used to share a set of css properties from one selector to another.  it is also allow 
+        classes to share a set of properties with another.
+
+        .message {  
+            border: 1px solid #ccc;  
+            padding: 10px;  
+            color: #333;  
+            }  
+            .success {  
+            @extend .message;  
+            border-color: green;  
+            }  
+            .error {  
+            @extend .message;  
+            border-color: red;  
+        }  
+
+    @at-root ==>
+
+    @debug ==>
+
+    @warn ==>
+
+    @error ==>
+*/
+
+/*
+
+    Control Directive
+
+    @if()
+
+
+    @if(){
+    }
+    @else if(){}  
+
+
+
+    @for directive facilitates you to generate a style in loop
+    
+    There are two type of keywords  used for @for directive
+    1.Through and 2.To
+    
+    syntax
+
+    @for $var from <start> through <end>
+
+    where $var is like &i
+
+
+    example
+    @for $i form 1 through 4{
+      .p#{$i} { padding-left : $i * 10px; }  
+    }
+
+
+    /@each directive
+
+    A variable is defined which consists off the value of each item in a list.
+
+    syntax 
+    @each $var in <list or map>   
+
+    example
+
+    @each $color in pink, yellow,red, blue,green{
+
+        .p_#{$color}{
+            background-color : #{$color}
+        }
+    }
+
+
+
+    /  @each directive with multiple assignment
+
+        syntax
+            @each $var1, $var2, $var3 in <list> 
+
+        example
+            @each $color $border in  (aqua, dotted),(red, solid) {
+                .#{$color} {  
+                    background-color : $color;  
+                    border: $border;  
+                } 
+            }   
+   
+
+     /@for Directive
+     
+     in @for directive to keyword use to specify range form initial to final
+
+     syntax
+
+     @for $var form <start> to <end>
+
+     example
+     
+     @for $i from 1 to 4{
+        .p#{$i}{
+            padding-left: $i*10 px;
+        }
+     }
+
+
+    / while directive
+
+
+
+    syntax
+
+    @while(condition){
+    }
+
+    example
+        $i: 100;  
+        @while $i > 0 {  
+            .padding-#{$i} { 
+                padding-left: 1px * $i; 
+            }  
+            $i: $i - 20;  
+        }   
+
+
+*/

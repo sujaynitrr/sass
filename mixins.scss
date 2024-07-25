@@ -1,0 +1,60 @@
+/*
+    @mixins directive
+
+    Mixins directive powerful in sass. with help of mixins we can reuse css chunk of code
+    Mixins help keep your style organized , reduce repetition and maintain consistency across our project.
+    Mixins is a just like function , in mixins we can pass parameters also set default parameters.
+    
+    example:
+        @mixin border-radius($radius) {
+            -webkit-border-radius: $radius;
+            -moz-border-radius: $radius;
+            -ms-border-radius: $radius;
+             border-radius: $radius;
+        }
+
+
+    How to use mixins directive in our code
+    
+    With help of @include() directive we can use @mixins in our code
+
+    example
+
+    .button{
+        /Here we are using mixins in our code
+        @include border-radius(10px)
+
+    }
+
+
+    example 2
+
+    @mixin flex-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @mixin text-style($font-size, $color) {
+        font-size: $font-size;
+        color: $color;
+    }
+
+    /Here using mixins properties
+
+    / Use mixins in styles
+    
+    .container {
+        @include flex-center;
+        height: 100vh;
+    }
+
+    .title {
+        @include text-style(24px, #333);
+        @include border-radius(5px);
+    }
+
+
+
+
+*/
