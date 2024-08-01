@@ -1,0 +1,29 @@
+/*
+    1. @extends directive use to share a set of css properties from one selector to another.
+    2. Using @extends directive avoiding to write duplicate code.
+
+
+*/
+
+%flex-container{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+//Trying to extend properties
+
+nav{
+    ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        @extend %flex-container;
+    }
+    li{
+        @extend %flex-container;
+        margin-right: 15px;
+    }
+   
+}
