@@ -54,6 +54,12 @@
         @include border-radius(5px);
     }
 
+    @mixins color($color,$font){
+        @if($font > 20 px){
+            background-color:$color
+        }
+    }
+
 
 
 
